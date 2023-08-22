@@ -20,6 +20,7 @@ function navSubmitStoryClick(evt){
   hidePageComponents();
   $submitForm.show();
   $allStoriesList.show();
+  $storyContainer.show();
 }
 
 $body.on("click", "#nav-submit-story", navSubmitStoryClick);
@@ -28,6 +29,7 @@ function navFavoritesClick(evt) {
   console.debug("navFavoritesClick", evt);
   hidePageComponents();
   putFavoritesListOnPage();
+  $storyContainer.show();
 }
 
 $body.on("click", "#nav-favorites", navFavoritesClick);
@@ -38,6 +40,7 @@ function navMyStories(evt) {
   console.debug("navMyStories", evt);
   hidePageComponents();
   putUserStoriesOnPage();
+  $storyContainer.show();
   $ownStories.show();
 }
 
