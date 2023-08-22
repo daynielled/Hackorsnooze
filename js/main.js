@@ -31,8 +31,8 @@ const $userProfile = $("#user-profile");
 
 function hidePageComponents() {
   const components = [
-    $storiesLists,
     $submitForm,
+    $storiesLists,
     $loginForm,
     $signupForm,
     $userProfile

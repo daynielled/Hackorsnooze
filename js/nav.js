@@ -18,11 +18,11 @@ $body.on("click", "#nav-all", navAllStories);
 function navSubmitStoryClick(evt){
   console.debug("navSubmitStoryClick", evt);
   hidePageComponents();
-  $allStoriesList.show();
   $submitForm.show();
+  $allStoriesList.show();
 }
 
-$navSubmitStory.on("click", "#nav-submit-story", navSubmitStoryClick);
+$body.on("click", "#nav-submit-story", navSubmitStoryClick);
 
 function navFavoritesClick(evt) {
   console.debug("navFavoritesClick", evt);
